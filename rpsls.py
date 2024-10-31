@@ -5,17 +5,9 @@ def clear(): os.system('cls' if os.name == 'nt' else 'clear')
 arsenal, commands = ("rock", "paper", "scissors", "lizard", "spock"), ('clear', 'exit', 'help')
 
 def sheldonHelp(): print("""
-SCISSORS cuts PAPER
-PAPER covers ROCK
-ROCK crushes LIZARD
-LIZARD poisons SPOCK
-SPOCK smashes SCISSORS
-SCISSORS decapitates LIZARD
-LIZARD eats PAPER
-PAPER disproves SPOCK
-SPOCK vapourizes ROCK
-and as it always has
-ROCK crushes SCISSORS
+SCISSORS cuts PAPER\nPAPER covers ROCK\nROCK crushes LIZARD\nLIZARD poisons SPOCK\nSPOCK smashes SCISSORS
+SCISSORS decapitates LIZARD\nLIZARD eats PAPER\nPAPER disproves SPOCK\nSPOCK vapourizes ROCK
+and as it always has\nROCK crushes SCISSORS
 """)
 
 def handleCommands(player1, player2):

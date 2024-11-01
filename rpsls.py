@@ -3,11 +3,7 @@ def clear(): os.system('cls' if os.name == 'nt' else 'clear')
 
 arsenal, commands = ("rock", "paper", "scissors", "lizard", "spock"), ('clear', 'exit', 'help')
 
-def sheldonHelp(): print("""
-SCISSORS cuts PAPER\nPAPER covers ROCK\nROCK crushes LIZARD\nLIZARD poisons SPOCK\nSPOCK smashes SCISSORS
-SCISSORS decapitates LIZARD\nLIZARD eats PAPER\nPAPER disproves SPOCK\nSPOCK vapourizes ROCK
-and as it always has\nROCK crushes SCISSORS
-""")
+def sheldonHelp(): print("\nSCISSORS cuts PAPER\nPAPER covers ROCK\nROCK crushes LIZARD\nLIZARD poisons SPOCK\nSPOCK smashes SCISSORS\nSCISSORS decapitates LIZARD\nLIZARD eats PAPER\nPAPER disproves SPOCK\nSPOCK vapourizes ROCK\nand as it always has\nROCK crushes SCISSORS\n")
 def handleCommands(player1, player2):
     if player1 in commands or player2 in commands:
         if player1 == "clear" or player2 == "clear": clear()
